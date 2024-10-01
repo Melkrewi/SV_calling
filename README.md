@@ -7,17 +7,19 @@ conda create -n sniffles_and_NGMLR
 conda activate sniffles_and_NGMLR
 conda install sniffles=2.4
 conda install bioconda::ngmlr
+conda deactivate
 ```
-Install samtools/1.9:
+Install samtools/1.9 (Newer samtools versions did not work directly with the output of NGMLR):
 ```
 module load anaconda3/2024.03_deb12
 source /mnt/nfs/clustersw/Debian/bullseye/anaconda3/2024.03_deb12/activate_anaconda3_2024.03_deb12.txt
 conda create -n samtools_1.9
 conda activate samtools_1.9
 conda install samtools=1.9
+conda deactivate
 ```
 
-Align the reads using NGMLR:
+Align the reads using NGMLR (you could also use minimap2):
 ```
 module load anaconda3/2024.03_deb12
 source /mnt/nfs/clustersw/Debian/bullseye/anaconda3/2024.03_deb12/activate_anaconda3_2024.03_deb12.txt
