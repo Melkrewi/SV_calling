@@ -1,4 +1,9 @@
 # SV_calling
+
+Downloading the reads and decompressing the files:
+```
+
+```
 Install NGMLR and sniffles:
 ```
 module load anaconda3/2024.03_deb12
